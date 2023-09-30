@@ -59,21 +59,7 @@ fun App(
         val home = stringResource(MR.strings.text_home)
         val showBottomBar = remember { mutableStateOf(false) }
         val selectedTab = remember { mutableStateOf(home) }
-        Scaffold(floatingActionButton = {
-            AnimatedVisibility(
-                showBottomBar.value && selectedTab.value == home, enter = fadeIn(), exit = fadeOut()
-            ) {
-
-                Image(
-                    modifier = Modifier.clip(RoundedCornerShape(8.dp)).clickable {
-                        navigator.navigate("/add")
-                    }.background(MaterialTheme.colorScheme.tertiary).padding(16.dp),
-                    imageVector = Icons.Default.Add,
-                    colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onTertiary),
-                    contentDescription = home
-                )
-            }
-        }, bottomBar = {
+        Scaffold( bottomBar = {
             AnimatedVisibility(
                 showBottomBar.value, enter = fadeIn(), exit = fadeOut()
             ) {
@@ -94,17 +80,6 @@ fun App(
                                 }
                             }, string = home, vector = Icons.Default.Home, selectedTab.value == home
                         )
-//                        BottomNavActionItem(
-//                            modifier = Modifier.weight(1f).fillMaxSize().clickable {
-//                                if (selectedTab.value != profile) {
-//                                    selectedTab.value = profile
-//                                    navigator.navigate("/profile")
-//                                }
-//                            },
-//                            string = profile,
-//                            vector = Icons.Default.VerifiedUser,
-//                            b = selectedTab.value == profile
-//                        )
                     }
                 }
             }
