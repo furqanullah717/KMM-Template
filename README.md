@@ -11,6 +11,8 @@ This Kotlin Multiplatform (KMP) Compose Boilerplate project is designed to kicks
 - **Resource Management:** Manage and access platform-specific resources in a cross-platform manner.
 
 - **Precompose Navigation:** Set up a basic navigation system for your Compose-based UI.
+- 
+- **Ktor:** Set up basic network calls for the app.
 
 ## Getting Started
 
@@ -61,7 +63,8 @@ Feel free to contribute to this project by creating issues, submitting pull requ
 - [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html)
 - [Jetpack Compose](https://developer.android.com/jetpack/compose)
 - [Moko MVVM](https://github.com/icerockdev/moko-mvvm)
+- [Ktor](https://ktor.io/)
 
 ## Contact
-If you have any questions or need further assistance, please don't hesitate to reach out to furqanullah717.com.
+If you have any questions or need further assistance, please don't hesitate to reach out to furqanullah717@gmail.com.
 
