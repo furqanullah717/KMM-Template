@@ -37,10 +37,6 @@ kotlin {
     }
 
     sourceSets {
-        val ktorVersion = "2.3.4"
-        val coroutinesVersion = "1.7.3"
-        val serializationVersion = "1.6.0"
-
         val commonMain by getting {
             dependencies {
                 implementation(compose.runtime)
@@ -60,13 +56,6 @@ kotlin {
                 implementation("dev.icerock.moko:mvvm-flow-compose:0.16.1")
                 api("dev.icerock.moko:resources-compose:0.23.0")
 
-                //ktro dependencies
-                implementation("io.ktor:ktor-client-core:$ktorVersion")
-                implementation("io.ktor:ktor-client-logging:$ktorVersion")
-                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serializationVersion")
             }
         }
         val commonTest by getting {
@@ -79,7 +68,6 @@ kotlin {
             dependencies {
                 implementation("androidx.appcompat:appcompat:1.6.1")
                 implementation("androidx.activity:activity-compose:1.7.2")
-                implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
 
             }
         }
@@ -89,7 +77,6 @@ kotlin {
         val iosSimulatorArm64Main by getting
         val iosMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-darwin:$ktorVersion")
             }
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
