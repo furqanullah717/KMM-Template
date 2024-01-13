@@ -15,9 +15,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.MaterialTheme
@@ -28,12 +26,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.unit.dp
 import com.codewithfk.eventhub.core.presentation.stringResource
 import com.codewithfk.eventhub.di.AppModule
+import com.codewithfk.eventhub.event.presentation.HomeScreen
 import com.codewithfk.eventhub.event.splash.SplashScreen
 import com.codewithfk.eventhub.theme.AppTheme
 import com.codewithfk.goodnight.MR
@@ -49,7 +46,6 @@ fun App(
     dynamicColor: Boolean,
     appModule: AppModule,
 ) {
-
 
     val navigator = rememberNavigator()
     AppTheme(
