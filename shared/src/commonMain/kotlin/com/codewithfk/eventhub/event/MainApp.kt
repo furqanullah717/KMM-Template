@@ -30,7 +30,7 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.codewithfk.eventhub.core.presentation.stringResource
 import com.codewithfk.eventhub.di.AppModule
-import com.codewithfk.eventhub.event.presentation.HomeScreen
+import com.codewithfk.eventhub.event.presentation.home.HomeScreen
 import com.codewithfk.eventhub.event.splash.SplashScreen
 import com.codewithfk.eventhub.theme.AppTheme
 import com.codewithfk.goodnight.MR

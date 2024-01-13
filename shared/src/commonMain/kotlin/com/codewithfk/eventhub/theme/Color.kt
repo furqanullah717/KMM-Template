@@ -65,3 +65,8 @@ val md_theme_dark_scrim = Color(0xFF000000)
 
 
 val seed = Color(0xFF6750A4)
+
+val accent1 = Color(0xFFF0635A)
+val accent2 = Color(0xFFF59762)
+val accent3 = Color(0xFF29D697)
+val accent4 = Color(0xFF46CDFB)
